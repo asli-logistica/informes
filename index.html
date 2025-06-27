@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Temporada de Cerezas Chilenas 2025-2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e0f2f7; /* Light blue background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Softer shadow */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .header-section {
+            background: linear-gradient(135deg, #0A1128 0%, #001F54 100%); /* Navy blue gradient */
+            color: white;
+            border-radius: 1.5rem;
+            /* Increased vertical padding to ensure space for logo and title */
+            padding: 3rem 1.5rem 2rem; /* Top padding, horizontal padding, bottom padding */
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            display: flex; /* Use flexbox for better vertical alignment */
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically */
+        }
+        .section-title {
+            color: #001F54; /* Darker blue for titles */
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .text-highlight {
+            color: #007BFF; /* Bright blue highlight */
+            font-weight: 600;
+        }
+        .icon-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .icon {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+            color: #007BFF; /* Bright blue icon */
+        }
+        .footer-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            height: 25px; /* Adjust as needed */
+        }
+        .main-logo {
+            max-width: 200px; /* Adjust logo size for smaller screens */
+            height: auto;
+            margin-bottom: 1.5rem; /* Space between logo and title */
+            display: block; /* Ensure it takes up its own line */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Responsive adjustments for the logo in the header */
+        @media (min-width: 768px) {
+            .main-logo {
+                max-width: 250px; /* Larger on desktop */
+                margin-bottom: 2rem; /* Slightly more space on desktop */
+            }
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 lg:p-8">
+
+    <div class="container mx-auto">
+        <!-- Header Section -->
+        <div class="header-section text-center">
+            <!-- ASLI Logo -->
+            <img src="https://asli.cl/wp-content/uploads/2023/07/Logo-principal-04.jpg"
+                 alt="ASLI Asesorías y Servicios Logísticos Integrales Ltda. Logo"
+                 class="main-logo"
+                 onerror="this.onerror=null;this.src='https://placehold.co/250x100/001F54/FFFFFF?text=ASLI+Logo';">
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Análisis y Proyección: Temporada de Cerezas Chilenas 2025-2026</h1>
+            <p class="text-lg sm:text-xl lg:text-2xl opacity-90">Un vistazo Profundo a la Industria, Estrategias Logísticas Clave.</p>
+        </div>
+
+        <!-- Section: Posicionamiento de Chile y Regiones Clave -->
+        <div class="card">
+            <h2 class="section-title text-2xl sm:text-3xl">Chile: Líder Global en Cerezas 🍒</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="mb-3">Chile es el <span class="text-highlight">principal exportador mundial</span> de cerezas frescas y el líder indiscutible del Hemisferio Sur, abasteciendo cerca del <span class="text-highlight">90%</span> de las exportaciones globales.</p>
+                    <p class="mb-3">La superficie cultivada de cerezos ha crecido un <span class="text-highlight">317%</span> entre 2014 y 2024.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg sm:text-xl mb-2 text-blue-700">Regiones Clave:</h3>
+                    <div class="icon-text"><span class="icon">📍</span><p><span class="font-medium">Región del Maule (VII):</span> Principal zona exportadora. 177,000 Ton en 2022-2023 (43% del total nacional).</p></div>
+                    <div class="icon-text"><span class="icon">📍</span><p><span class="font-medium">Región de O'Higgins (VI):</span> Pilar fundamental. 51.8% de exportaciones frutícolas de la región en marzo 2025.</p></div>
+                    <p class="mt-3 text-sm italic">Estas regiones son críticas para el volumen y la eficiencia del sector.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Análisis Histórico de las Temporadas -->
+        <div class="card">
+            <h2 class="section-title text-2xl sm:text-3xl">Análisis Histórico de Temporadas (2022/23 - 2024/25) 📈</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden shadow-sm">
+                    <thead>
+                        <tr class="bg-blue-600 text-white">
+                            <th class="py-2 px-3 text-left">Temporada</th>
+                            <th class="py-2 px-3 text-left">Volumen Total (Ton)</th>
+                            <th class="py-2 px-3 text-left">Valor Total (USD FOB)</th>
+                            <th class="py-2 px-3 text-left">Precio Promedio (USD/Kg)</th>
+                            <th class="py-2 px-3 text-left hidden sm:table-cell">Notas Clave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-2 px-3">2022/23</td>
+                            <td class="py-2 px-3 text-highlight">415,398</td>
+                            <td class="py-2 px-3">~3,000 millones</td>
+                            <td class="py-2 px-3">~7.22</td>
+                            <td class="py-2 px-3 hidden sm:table-cell">Éxito por mejoras logísticas y apertura de China. Maule aportó 43%.</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-2 px-3">2023/24</td>
+                            <td class="py-2 px-3 text-highlight">413,000</td>
+                            <td class="py-2 px-3">~3,000 millones</td>
+                            <td class="py-2 px-3">~7.26</td>
+                            <td class="py-2 px-3 hidden sm:table-cell">Volumenes sustanciales. Lapins, Santina y Regina dominaron envíos.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-2 px-3">2024/25</td>
+                            <td class="py-2 px-3 text-highlight">626,000 - 657,935 (RÉCORD)</td>
+                            <td class="py-2 px-3 text-highlight">~1,800 millones</td>
+                            <td class="py-2 px-3 text-highlight">~2.87 (Caída drástica)</td>
+                            <td class="py-2 px-3 hidden sm:table-cell">Volumen récord, pero <span class="font-bold text-blue-700">colapso de precios</span> y pérdidas financieras. Saturación en China.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4 text-sm italic text-blue-700">La temporada 2024-2025 expuso una <span class="font-bold">vulnerabilidad estructural</span>: la oferta superó la capacidad de absorción del mercado a precios rentables.</p>
+        </div>
+
+        <!-- Section: Trayectoria y Proyecciones de Copefrut -->
+        <div class="card">
+            <h2 class="section-title text-2xl sm:text-3xl">Copefrut: Liderazgo y Visión de Futuro 🍎🥝🍒</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Historia y Alcance:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Trabaja con 210 productores y más de 5,000 hectáreas.</li>
+                        <li>Exportó 82,842 toneladas en la última temporada (manzanas, kiwis, ciruelas, cerezas).</li>
+                        <li>Llega a más de 170 clientes globalmente.</li>
+                    </ul>
+                    <h3 class="font-semibold text-xl mt-4 mb-2 text-blue-700">Cerezas: Producto Estrella:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Crecimiento del 6% en exportaciones de cerezas, alcanzando <span class="text-highlight">28,749 toneladas</span>.</li>
+                        <li><span class="font-bold">Segundo mayor exportador de cerezas de Chile.</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Inversiones y Proyecciones:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Inauguró 24 líneas adicionales de procesamiento en Planta Linares (total 52 líneas).</li>
+                        <li>Capacidad de procesamiento de hasta <span class="text-highlight">37,000 kg/h</span>.</li>
+                        <li>Implementación de selladoras automáticas, flowpack, paletizado automático.</li>
+                        <li>Visión de una nueva línea de cerezas cada dos años hasta 2032-2033.</li>
+                        <li>Para la temporada 2024-2025, Copefrut se preparó para recepcionar <span class="text-highlight">40 millones de kilos</span>, proyectando 3.5 millones de cajas exportadas (60% más).</li>
+                        <li>85% a China, 15% a otros mercados.</li>
+                    </ul>
+                    <p class="mt-3 text-sm italic">Copefrut lidera con <span class="font-bold">innovación y tecnología</span> para una logística eficiente y calidad premium.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Competidores Potenciales en Latinoamérica -->
+        <div class="card">
+            <h2 class="section-title text-2xl sm:text-3xl">Competidores Potenciales en Latinoamérica 🌍</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">🇦🇷 Argentina:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Producción en Mendoza, Neuquén, Río Negro, Santa Cruz, Chubut.</li>
+                        <li>Producción nacional (2021): ~11,000 toneladas.</li>
+                        <li>Exportaciones (Dic 2024): <span class="text-highlight">más de 6,000 toneladas</span> (aumento del 34% interanual).</li>
+                        <li>Aprovecha ventanas de fruta temprana.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">🇵🇪 Perú:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Proyección a largo plazo: cereza podría superar al arándano en valor de exportación (<span class="text-highlight">hasta $3,000 millones USD</span>).</li>
+                        <li>Introduce nuevas variedades (Sweet Gabriel, Sweet Lorenz, Sweet Aryana).</li>
+                        <li>Estimación: podría exportar cerezas a nivel mundial para <span class="text-highlight">2028</span>, impulsado por el megapuerto de Chancay.</li>
+                        <li>Se proyecta que Perú superará a Chile como mayor exportador de frutas de Sudamérica en 2025.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-4 text-sm italic">La competencia regional se intensifica, exigiendo a Chile una constante reevaluación de estrategias.</p>
+        </div>
+
+        <!-- Section: Mejoras Logísticas y Tránsito por Argentina -->
+        <div class="card">
+            <h2 class="section-title text-2xl sm:text-3xl">Logística: Optimizando Rutas y Eficiencia 🚚✈️🚢</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Logística Actual:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><span class="font-bold">Cherry Express:</span> Rutas marítimas directas a China (21-22 días). STI maneja más del 50%.</li>
+                        <li>Clave para cadena de frío y preservación del valor.</li>
+                    </ul>
+                    <h3 class="font-semibold text-xl mt-4 mb-2 text-blue-700">Oportunidades de Tránsito por Argentina:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Convenio Argentino-Chileno de Transporte Terrestre (1974) facilita tránsito.</li>
+                        <li><span class="font-medium">Optimización de Rutas:</span> Acceso a puertos del Atlántico para Europa/Costa Este de EE.UU.</li>
+                        <li><span class="font-medium">Diversificación Portuaria:</span> Menor dependencia de puertos chilenos, alivio de congestión.</li>
+                        <li><span class="font-medium">Resiliencia Logística:</span> Vía alternativa ante interrupciones en el Pacífico.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">Desafíos del Tránsito por Argentina:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><span class="font-medium">Costos Adicionales:</span> Reposicionamiento, carga/descarga de contenedores.</li>
+                        <li><span class="font-medium">Complejidad Aduanera:</span> Manejo fitosanitario específico para perecederos.</li>
+                        <li><span class="font-medium">Coordinación Binacional:</span> Impecable entre transportistas, aduanas y autoridades.</li>
+                    </ul>
+                    <p class="mt-4 text-sm italic">Explorar opciones transandinas fortalece la resiliencia y diversificación logística, crucial para un socio estratégico.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Estrategias de Competitividad -->
+        <div class="card">
+            <h2 class="section-title text-2xl sm:text-3xl">Estrategias Clave para la Competitividad 🚀</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">1. Diversificación de Mercados:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Reducir dependencia de China (88-93%).</li>
+                        <li>Explorar India, ASEAN, Norte de África, Medio Oriente, Brasil, Corea del Sur.</li>
+                        <li>Profundizar penetración en el interior de China.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">2. Calidad y Postcosecha:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Control estricto desde producción a embalaje.</li>
+                        <li>Inversión en atmósfera controlada para viajes largos.</li>
+                        <li>Evitar exportación de fruta no competitiva.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">3. Innovación y Tecnología:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Robótica en automatización de tareas.</li>
+                        <li>Blockchain para transparencia y trazabilidad.</li>
+                        <li>Sensores y monitores para seguimiento en tiempo real.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">4. Sostenibilidad y Trazabilidad:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Prácticas agrícolas sostenibles.</li>
+                        <li>Rastreo del producto del origen al destino.</li>
+                        <li>Responde a demandas del consumidor y fortalece reputación.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-blue-700">5. Promoción y Marketing:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Aumentar inversión en mercados secundarios.</li>
+                        <li>Campañas educativas sobre inocuidad y beneficios.</li>
+                        <li>Construir confianza del consumidor.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-4 text-sm italic">Un enfoque colaborativo y basado en la excelencia asegurará la sostenibilidad y rentabilidad futura.</p>
+        </div>
+
+        <!-- Section: Conclusiones y Proyección 2025-2026 -->
+        <div class="card bg-blue-50 text-blue-800 border border-blue-200">
+            <h2 class="section-title text-2xl sm:text-3xl">Conclusiones y Proyección 2025-2026 🎯</h2>
+            <p class="mb-3">La temporada 2024-2025 fue una <span class="font-bold">llamada de atención</span>: el volumen récord no garantizó la rentabilidad. Para 2025-2026, la industria chilena debe enfocarse en la <span class="font-bold">maximización del valor por unidad</span> y la <span class="font-bold">rentabilidad general</span>, no solo el volumen.</p>
+            <ul class="list-disc list-inside space-y-1 mb-3">
+                <li><span class="font-semibold">Crecimiento Sostenible:</span> La maduración de nuevos huertos en O'Higgins y Maule augura un aumento continuo en la oferta.</li>
+                <li><span class="font-semibold">Mercados Diversificados:</span> La apertura y consolidación de destinos más allá de China será crucial para absorber el volumen sin saturación.</li>
+                <li><span class="font-semibold">Calidad Innegociable:</span> Inversiones en postcosecha y procesos garantizarán la fruta premium que el mercado demanda.</li>
+                <li><span class="font-semibold">Eficiencia Logística:</span> La capacidad de mover el producto de manera rápida, segura y rentable a cualquier destino será un diferenciador clave.</li>
+            </ul>
+            <p class="text-sm italic font-medium">Copefrut, con su visión innovadora y compromiso logístico, se posiciona como un ejemplo a seguir en esta transformación, demostrando cómo la eficiencia en la cadena de suministro se traduce en éxito comercial.</p>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="text-center mt-8 text-gray-600 text-sm">
+            <p>Este informe fue preparado con el apoyo de ASLI Asesorías y Servicios Logísticos Integrales Ltda.</p>
+            <p class="mt-1">Longitudinal Sur Km. 186, Curicó, Chile.</p>
+            <p class="mt-1 font-semibold text-gray-700">Su socio estratégico para una logística sin límites.</p>
+        </div>
+    </div>
+</body>
+</html>
